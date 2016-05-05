@@ -33,6 +33,10 @@ CREATE TABLE term (
     is_root boolean default FALSE,
     description character varying,
     url character varying,
+    mesh_description character varying,
+    mesh_url character varying,
+    mesh_id character varying,
+
     CONSTRAINT term_pkey PRIMARY KEY (id),
     CONSTRAINT term_unique UNIQUE (lexicon_identifier, context_identifier, context_version, term),
     CONSTRAINT term_lexicon_context_version_fkey FOREIGN KEY (lexicon_identifier, context_identifier, context_version) REFERENCES context(lexicon_identifier, identifier, version) ON UPDATE CASCADE ON DELETE CASCADE
