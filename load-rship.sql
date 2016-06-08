@@ -7,3 +7,4 @@ INSERT INTO relationship (relationship) VALUES ('isMentionedIn');
 INSERT INTO relationship (relationship) VALUES ('hasAnalysisTool');
 INSERT INTO relationship (relationship) VALUES ('hasCaseStudy');
 INSERT INTO relationship (relationship) VALUES ('N/A');
+
